@@ -1,15 +1,21 @@
-Source: template-repository
-Section: unknown
+Source: node-stack-trace
+Section: javascript
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Roland Mas <lolando@debian.org>
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+Standards-Version: 4.5.0
+Homepage: https://github.com/felixge/node-stack-trace
+Vcs-Git: https://salsa.debian.org/js-team/node-stack-trace.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-stack-trace
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: node-stack-trace
+Architecture: all
+Depends:
+ ${misc:Depends}
+Multi-Arch: foreign
+Description: Get v8 stack traces as an array of CallSite objects for Node.js
+ Node.js is an event-based server-side JavaScript engine.

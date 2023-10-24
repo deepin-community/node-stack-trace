@@ -1,5 +1,29 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-stack-trace (0.0.10-3) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-stack-trace: Add Multi-Arch: foreign.
+  * Update standards version to 4.6.1, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Roland Mas ]
+  * Declare compliance with policy 4.5.0
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 30 Nov 2022 00:44:26 +0000
+
+node-stack-trace (0.0.10-2) unstable; urgency=medium
+
+  * Source-only upload for migration to testing.
+
+ -- Roland Mas <lolando@debian.org>  Wed, 24 Nov 2021 12:55:24 +0100
+
+node-stack-trace (0.0.10-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Disable testsuite (no longer present in upstream tarball).
+
+ -- Roland Mas <lolando@debian.org>  Thu, 11 Nov 2021 17:31:18 +0100
+
+node-stack-trace (0.0.1-1) unstable; urgency=medium
+
+  * Initial release based on npm2deb template.
+
+ -- Roland Mas <lolando@debian.org>  Wed, 15 Sep 2021 16:18:09 +0200
